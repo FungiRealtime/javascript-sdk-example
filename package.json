@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@fungi-realtime/core": "^0.2.3",
+    "@fungi-realtime/node": "^0.3.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   }
 }

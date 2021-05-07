@@ -28,6 +28,10 @@ body {
   margin-top: 2rem;
 }
 
+li:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
 button,
 input {
   padding: 0.5rem;
