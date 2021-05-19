@@ -11,7 +11,7 @@ let newMessageForm = document.getElementById("new-message-form");
 
 // Create a new client (there should only be one client accross the entire app)
 let client = new Client({
-  endpoint: "ws://localhost:8081",
+  endpoint: "ws://localhost:8080",
 });
 
 // Subscribe to the public channel "messages"

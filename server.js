@@ -16,7 +16,12 @@ app.use(express.json());
 
 app.post("/send-message", async (req, res) => {
   let { content, sentAt } = req.body;
-  await client.trigger("messages", "new-message", { content, sentAt });
+  try {
+    await client.trigger("messages", "new-message", { content, sentAt });
+  } catch (error) {
+    console.log(error);
+  }
+
   return res.json({ content, sentAt });
 });
 
